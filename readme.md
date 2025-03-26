@@ -10,7 +10,7 @@ BookLounge is a web application designed to allow users to explore a vast collec
 ---
 
 ## Live Project URL  
-[Live URL]()
+[Live URL](https://book-lounge.vercel.app/)
 
 ---
 
