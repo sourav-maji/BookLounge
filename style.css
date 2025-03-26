@@ -1,0 +1,121 @@
+/* General Body Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e2e6ea;
+}
+
+/* Button Group */
+.btn-group .btn {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+/* Search Box */
+.search-box {
+    max-width: 350px;
+    width: 100%;
+}
+
+/* Row Styling for Cards */
+.row {
+    margin-top: 30px;
+}
+
+.col-sm-4 {
+    margin-bottom: 30px;
+}
+
+/* Pagination Footer */
+.pagination-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination-btn {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 10px 20px;
+}
+
+/* Pagination Button Styles */
+.pagination-btn:disabled {
+    background-color: #e2e6ea;
+    cursor: not-allowed;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pagination-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+}
