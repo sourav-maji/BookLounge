@@ -50,6 +50,7 @@ function getBooks(url, page) {
       // Assign the values on variable on api response
       totalPage = data.data.totalPages;
       previousPage = data.data.previousPage;
+      currentPage = data.data.page;
       nextPage = data.data.nextPage;
       books = data.data.data;
       showRecords(books);
@@ -210,17 +211,18 @@ if (sortByDate) {
 
 previousPageBtn.addEventListener("click", () => {
   if (currentPage > 1) {
-    getBooks(baseUrl, currentPage--);
-    showRecords(books);
+    currentPage--;
+    getBooks(baseUrl, currentPage);
   } else {
-    alert("You're already in first page");
+    alert("You're already on the first page.");
   }
 });
+
 nextPageBtn.addEventListener("click", () => {
   if (currentPage < totalPage) {
-    getBooks(baseUrl, currentPage++);
-    showRecords(books);
+    currentPage++;
+    getBooks(baseUrl, currentPage);
   } else {
-    alert("You're already in first page");
+    alert("You're already on the last page.");
   }
 });
